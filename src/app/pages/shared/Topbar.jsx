@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import {Box, IconButton, useTheme} from "@mui/material";
 import InputBase from '@mui/material/InputBase';
-import {ColorModeContext, tokens} from "../../theme";
+import {ColorModeContext, tokens} from "../../../theme";
 import SearchIcon from '@mui/icons-material/Search';
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
 import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';

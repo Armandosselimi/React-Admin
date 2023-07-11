@@ -8,6 +8,7 @@ import Dashboard from "./app/pages/dashboard";
 import Team from "./app/pages/team";
 import Contacts from "./app/pages/contacts";
 import Invoices from "./app/pages/invoices";
+import ProfileForm from "./app/pages/profileForm";
 
 
 
@@ -29,7 +30,7 @@ function App() {
                             <Route path="/team" element={<Team />} />
                             <Route path="/contacts" element={<Contacts />} />
                             <Route path="/invoices" element={<Invoices />} />
-                            {/*<Route path="/form" element={<Form />} />*/}
+                            <Route path="/form" element={<ProfileForm />} />
                             {/*<Route path="/bar" element={<Bar />} />*/}
                             {/*<Route path="/pie" element={<Pie />} />*/}
                             {/*<Route path="/line" element={<Line />} />*/}

@@ -9,6 +9,7 @@ import Team from "./app/pages/team";
 import Contacts from "./app/pages/contacts";
 import Invoices from "./app/pages/invoices";
 import ProfileForm from "./app/pages/profileForm";
+import Calendar from "./app/pages/calendar";
 
 
 
@@ -31,11 +32,12 @@ function App() {
                             <Route path="/contacts" element={<Contacts />} />
                             <Route path="/invoices" element={<Invoices />} />
                             <Route path="/form" element={<ProfileForm />} />
+                            <Route path="/calendar" element={<Calendar />} />
+
                             {/*<Route path="/bar" element={<Bar />} />*/}
                             {/*<Route path="/pie" element={<Pie />} />*/}
                             {/*<Route path="/line" element={<Line />} />*/}
                             {/*<Route path="/faq" element={<FAQ />} />*/}
-                            {/*<Route path="/calendar" element={<Calendar />} />*/}
                             {/*<Route path="/geography" element={<Geography />} />*/}
                         </Routes>
 

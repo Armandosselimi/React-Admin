@@ -7,6 +7,7 @@ import Topbar from "./app/pages/shared/Topbar";
 import Sidebar from "./app/pages/shared/Sidebar";
 import {useState} from "react";
 import Dashboard from "./app/pages/dashboard";
+import Team from "./app/pages/team";
 
 
 
@@ -25,7 +26,7 @@ function App() {
 
                         <Routes>
                             <Route path="/" element={<Dashboard />} />
-                            {/*<Route path="/team" element={<Team />} />*/}
+                            <Route path="/team" element={<Team />} />
                             {/*<Route path="/contacts" element={<Contacts />} />*/}
                             {/*<Route path="/invoices" element={<Invoices />} />*/}
                             {/*<Route path="/form" element={<Form />} />*/}

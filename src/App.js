@@ -14,6 +14,7 @@ import FAQ from "./app/pages/faq";
 import Bar from "./app/pages/bar";
 import Pie from "./app/pages/pie";
 import Line from "./app/pages/line";
+import Geography from "./app/pages/geography";
 
 
 
@@ -41,7 +42,7 @@ function App() {
                             <Route path="/bar" element={<Bar/>} />
                             <Route path="/pie" element={<Pie />} />
                             <Route path="/line" element={<Line />} />
-                            {/*<Route path="/geography" element={<Geography />} />*/}
+                            <Route path="/geography" element={<Geography />} />
                         </Routes>
 
                     </main>

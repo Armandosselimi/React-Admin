@@ -12,6 +12,7 @@ import ProfileForm from "./app/pages/profileForm";
 import Calendar from "./app/pages/calendar";
 import FAQ from "./app/pages/faq";
 import Bar from "./app/pages/bar";
+import Pie from "./app/pages/pie";
 
 
 
@@ -37,7 +38,7 @@ function App() {
                             <Route path="/calendar" element={<Calendar />} />
                             <Route path="/faq" element={<FAQ />} />
                             <Route path="/bar" element={<Bar/>} />
-                            {/*<Route path="/pie" element={<Pie />} />*/}
+                            <Route path="/pie" element={<Pie />} />
                             {/*<Route path="/line" element={<Line />} />*/}
                             {/*<Route path="/geography" element={<Geography />} />*/}
                         </Routes>

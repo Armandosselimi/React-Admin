@@ -6,6 +6,9 @@ import {DataGrid,} from "@mui/x-data-grid";
 import {mockDataInvoices} from "../../../data/mockData";
 
 const Invoices = () => {
+    const theme = useTheme()
+    const colors = tokens(theme.palette.mode)
+
     const columns = [
         {field: 'id', headerName: 'ID', flex: 0.5},
         {field: 'name', headerName: 'Name', flex: 1, cellClassName: 'name-column--cell'},
@@ -24,8 +27,7 @@ const Invoices = () => {
 
 
     ]
-    const theme = useTheme()
-    const colors = tokens(theme.palette.mode)
+
     return (
         <Box m='20px'>
             <Header title='Contacts' subtitle='List of Contacts'/>

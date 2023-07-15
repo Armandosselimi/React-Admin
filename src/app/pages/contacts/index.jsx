@@ -6,6 +6,9 @@ import {DataGrid, GridToolbar} from "@mui/x-data-grid";
 import {mockDataContacts} from "../../../data/mockData";
 
 const Contacts = () => {
+    const theme = useTheme()
+    const colors = tokens(theme.palette.mode)
+
     const columns = [
         {field: 'id', headerName: 'ID', flex: 0.5},
         {field: 'name', headerName: 'Name', flex: 1, cellClassName: 'name-column--cell'},
@@ -17,8 +20,7 @@ const Contacts = () => {
         {field: "zipCode", headerName: "Zip Code", flex: 1},
         {field: "registrarId", headerName: "Registrar ID"},
     ]
-    const theme = useTheme()
-    const colors = tokens(theme.palette.mode)
+
     return (
         <Box m='20px'>
             <Header title='Contacts' subtitle='List of Contacts'/>

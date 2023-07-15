@@ -36,7 +36,13 @@ const ProfileForm = () => {
         console.log(values)
     }
     return (
-        <Box m='20px'>
+        <Box
+            m='35px'
+            border='1px groove' // Add a dashed border with 3px width
+            borderColor='gray' // Set the border color to gray
+            borderRadius='4px' // Add border radius to give it rounded corners
+            p='30px' // Add padding to create some space between the border and form
+        >
             <Header title='CREATE USER' subtitle='Create a New User Profile'/>
             <Formik
                 initialValues={initialValues}

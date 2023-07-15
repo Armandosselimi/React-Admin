@@ -9,6 +9,9 @@ import SecurityOutlinedIcon from '@mui/icons-material/SecurityOutlined';
 import LockOpenOutlinedIcon from '@mui/icons-material/LockOpenOutlined';
 
 const Team = () => {
+    const theme = useTheme()
+    const colors = tokens(theme.palette.mode)
+
     const columns = [
         {field: 'id', headerName: 'ID'},
         {field: 'name', headerName: 'Name', flex: 1, cellClassName: 'name-column--cell'},
@@ -51,8 +54,7 @@ const Team = () => {
         },
 
     ]
-    const theme = useTheme()
-    const colors = tokens(theme.palette.mode)
+
     return (
         <Box m='20px'>
             <Header title='TEAM' subtitle='Managing the Team Members'/>

@@ -3,7 +3,6 @@ import {ColorModeContext, useMode} from "./theme";
 import {CssBaseline, ThemeProvider} from "@mui/material";
 import Topbar from "./app/pages/shared/Topbar";
 import Sidebar from "./app/pages/shared/Sidebar";
-import {useState} from "react";
 import Dashboard from "./app/pages/dashboard";
 import Team from "./app/pages/team";
 import Contacts from "./app/pages/contacts";
@@ -17,18 +16,14 @@ import Line from "./app/pages/line";
 import Geography from "./app/pages/geography";
 
 
-
-
 function App() {
     const [theme, colorMode] = useMode()
-    const [isSidebar, setIsSidebar] = useState(true);
-
     return (
         <ColorModeContext.Provider value={colorMode}>
             <ThemeProvider theme={theme}>
                 <CssBaseline/>
                 <div className="app">
-                    <Sidebar/>
+                    <Sidebar />
                     <main className='content'>
                         <Topbar/>
                         <Routes>
